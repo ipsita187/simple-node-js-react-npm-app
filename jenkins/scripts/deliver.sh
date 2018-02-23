@@ -21,6 +21,7 @@ set -x
 npm start &
 sleep 1
 echo $! > .pidfile
+echo 'SERVER STARTED'
 set +x
 
 echo 'Now...'
