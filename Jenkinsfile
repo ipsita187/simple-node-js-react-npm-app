@@ -7,8 +7,8 @@ pipeline {
     }
     stages {
         stage('Build') { 
-            withDockerContainer(args: "-u ibmadmin") {
-                sh 'npm install' 
+            steps {
+                sh 'sudo npm install' 
             }
         }
     }
