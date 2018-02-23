@@ -7,7 +7,7 @@ pipeline {
     }
     stages {
         stage('Build') { 
-            withDockerContainer(args: "-u root") {
+            withDockerContainer(args: "-u ibmadmin") {
                 sh 'npm install' 
             }
         }
